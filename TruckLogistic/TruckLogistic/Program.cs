@@ -1,6 +1,8 @@
 ﻿
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +11,10 @@ namespace TruckLogistic
 {
     class Program
     {
-
+        public interface ITruckLoader
+        {
+            dynamic AcceptIncomingTrucks(string path);
+        }
 
         public abstract class Vehicle
         {
@@ -24,7 +29,6 @@ namespace TruckLogistic
             {
                 get { return String.Format("{0}", _name ); }
             }
-
         }
 
         public abstract class CarryingVehicle : Vehicle
@@ -53,12 +57,32 @@ namespace TruckLogistic
             }
         }
 
+        public class TruckTransport : ITruckLoader
+        {
+            public string Name { get; set; }
+            public string Date { get; set; }
+
+            public dynamic AcceptIncomingTrucks(string path)
+            {
+                List<TruckTransport> trucks = JsonConvert.DeserializeObject<List<TruckTransport>>(
+                  File.ReadAllText(path));
+
+                return trucks;
+            }
+        }
+
 
         static void Main(string[] args)
         {
-            Truck truck = new Truck("Jozo",DateTime.Now,DateTime.Today,20,20);
+            TruckTransport transport = new TruckTransport();
+            var transported = transport.AcceptIncomingTrucks(@"C:\Users\randj\Dropbox\Truck-Logistic\TruckLogistic\TruckLogistic\Files\truck.json");
 
-            Console.WriteLine(truck.GetName);
+            foreach (var truck in transported)
+            {
+                Console.WriteLine(truck.Name);
+                Console.WriteLine(truck.Date);
+            }
+
         }
     }
 }
