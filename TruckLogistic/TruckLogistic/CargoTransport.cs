@@ -4,22 +4,20 @@ using System.IO;
 
 namespace TruckLogistic
 {
-    partial class Program
+    public class CargoTransport : Transport
     {
-        public class CargoTransport : Transport
+        public CargoTransport()
         {
-            public CargoTransport()
-            {
-                Name = "Cargo";
-            }
+            Name = "Cargo";
+        }
 
-            public List<CargoTransport> AcceptIncomingCargo()
-            {
-                List<CargoTransport> cargo = JsonConvert.DeserializeObject<List<CargoTransport>>(
-                 File.ReadAllText(@"C:\Users\randj\Dropbox\Truck-Logistic\TruckLogistic\TruckLogistic\Files\cargo.json"));
+        public List<CargoTransport> AcceptIncomingCargo()
+        {
+            List<CargoTransport> cargo = JsonConvert.DeserializeObject<List<CargoTransport>>(
+             File.ReadAllText(@"C:\Users\randj\Dropbox\Truck-Logistic\TruckLogistic\TruckLogistic\Files\cargo.json"));
 
-                return cargo;
-            }
+            return cargo;
         }
     }
 }
+

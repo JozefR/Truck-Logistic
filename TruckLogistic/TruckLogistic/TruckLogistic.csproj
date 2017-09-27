@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CargoTransport.cs" />
     <Compile Include="CarryingVehicle.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="ITruckLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transport.cs" />
     <Compile Include="Truck.cs" />
     <Compile Include="TruckTransport.cs" />
     <Compile Include="Vehicle.cs" />
@@ -58,6 +58,7 @@
     <None Include="App.config" />
     <None Include="Files\cargo.json" />
     <None Include="Files\truck.json" />
+    <None Include="LogisticDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

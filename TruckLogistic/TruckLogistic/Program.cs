@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 
 namespace TruckLogistic
 {
-    partial class Program
+    partial class program
     {
         static void Main(string[] args)
         {
+
             TruckTransport transport = new TruckTransport();
             CargoTransport cargoTransport = new CargoTransport();
 
