@@ -1,10 +1,13 @@
-﻿namespace TruckLogistic
+﻿using System.Collections.Generic;
+
+namespace TruckLogistic
 {
     partial class Program
     {
-        public interface ITruckLoader
+        public interface ITransporTLoader
         {
-            dynamic AcceptIncomingTrucks(string path);
+            List<TruckTransport> AcceptIncomingTrucks();
+            List<CargoTransport> AcceptIncomingCargo();
         }
     }
 }
