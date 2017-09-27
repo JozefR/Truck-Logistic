@@ -42,5 +42,12 @@
       <FileName>CarryingVehicle.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="TruckLogistic.ProcessTransport">
+    <Position X="5.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProcessTransport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
