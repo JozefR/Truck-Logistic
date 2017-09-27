@@ -24,11 +24,10 @@ The task of the program will be to determine the timing of the individual trucks
 
 Let's show how the program could work 
 
-Date            	Event	                       Cargo	      Note
-15.04.2014 12:30	Arrived Kamion Petr	           0       	There are no goods so far so the truck is waiting.
-15.04.2014 13:00	Received 45 boxes of goods	   0	      In the truck Peter was immediately loaded 45 boxes, because the truck is waiting                                                   on site
-15.04.2014 14:00	Received 55 boxes of goods     0       	In the truck Peter was immediately 55 boxes loaded and the truck was fully                                                               loaded and left, departure time of truck Petr is 15.4.2014 14:00
-15.04.2014 16:00	Received 110 boxes of goods	   20	      The cart was loaded with 90 boxes loaded with the truck and the truck was                                                               fully loaded and left, time of departure Petr is 15.4.2014 16:00
+15.04.2014 12:30, Arrived Kamion Petr, Cargo 0, Note: There are no goods so far so the truck is waiting.
+15.04.2014 13:00, Received 45 boxes of goods, Cargo 0, Note: In the truck Peter was immediately loaded 45 boxes, because the truck is waiting on site.
+15.04.2014 14:00,	Received 55 boxes of goods, Cargo 0 In the truck Peter was immediately 55 boxes loaded and the truck was full loaded and left, departure time of truck Petr is 15.4.2014 14:00.
+15.04.2014 16:00,	Received 110 boxes of goods, Cargo 20, The cart was loaded with 90 boxes loaded with the truck and the truck was fully loaded and left, time of departure Petr is 15.4.2014 16:00.
 
 # Report
 
