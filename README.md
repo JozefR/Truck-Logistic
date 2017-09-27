@@ -36,6 +36,7 @@ The output file will contain 3 parts:
 1. A list of trucks that have been filled and departing with the time of their departure in the same format as in the input files.
 2. List of trucks that have failed to fully load the number of loaded boxes.
 3. The number of boxes left after the simulation at the trolley (0 if all was removed).
-These individual sections will be separated by lines containing the texts: ODBAVENE_KAMIONY, NEODBAVENE_KAMIONY. The last line of the file will be in the ZUSTATEK_ZBOZI format: the number of boxes. If the data for one of the two parts is not, then it will be left empty, in the demo below, where there are no unpowered trucks:
+These individual sections will be separated by lines containing the texts: Full trucks, Waiting trucks. The last line of the file will be in the Rest of the Cargo. 
+
 
 
