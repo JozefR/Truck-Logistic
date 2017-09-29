@@ -2,7 +2,7 @@
 
 # Introduction
 
-This repository is for private use only! Challenge from the University www.unicorncollege.com
+This repository is for private use only! Challenge from www.unicorncollege.com
 
 # Input Data
 
